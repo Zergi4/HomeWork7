@@ -16,9 +16,19 @@ public class Main {
             System.out.print(n + " ");
         }
         System.out.println(" ");
-        for (;n > 0;) {
+        for (; n > 0; ) {
             System.out.print(n + " ");
             n--;
+        }
+        System.out.println(" ");
+        float population = 12_000_000;
+        float mortality = 0.008f;
+        float birthLate = 0.017f;
+        i = 0;
+        while (i < 10) {
+            i++;
+            population = population + (birthLate*population) - (mortality*population);
+            System.out.println("Год " + i + " численность населения составляет " + population);
         }
     }
 }
