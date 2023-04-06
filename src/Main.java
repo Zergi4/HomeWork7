@@ -55,5 +55,16 @@ public class Main {
             System.out.println("Сегодня пятница, " + n + "-е число. Необходимо подготовить отчет.");
             n = n + 7;
         }
+        i = 0;
+        int currentYear = 2023;
+        int futureYear = currentYear + 100;
+        int pastYear = currentYear - 200;
+        while (i < futureYear) {
+            i = i + 79;
+            if ((i > pastYear) && (i < futureYear)) {
+                System.out.println(i);
+            }
+
+        }
     }
 }
