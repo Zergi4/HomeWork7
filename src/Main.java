@@ -34,12 +34,26 @@ public class Main {
         float sum = 15000;
         float percent = 0.07F;
         while (sum < 12_000_000) {
-           if (i % 6 == 0) {
+            if (i % 6 == 0) {
                 System.out.println("Месяц " + i + " сумма накоплений " + sum);
             }
             sum = sum + percent * sum;
             i++;
         }
         System.out.println("Месяц " + i + " сумма накоплений " + sum);
+        sum = 15000;
+        i = 0;
+        while (i <= 9 * 12) {
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " сумма накоплений " + sum);
+            }
+            sum = sum + percent * sum;
+            i++;
+        }
+        n = 7;
+        while (n <= 31) {
+            System.out.println("Сегодня пятница, " + n + "-е число. Необходимо подготовить отчет.");
+            n = n + 7;
+        }
     }
 }
