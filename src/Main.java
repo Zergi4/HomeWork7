@@ -10,6 +10,15 @@ public class Main {
             total = total + salary;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
         }
-
+        int n = 0;
+        while (n < 10) {
+            n++;
+            System.out.print(n + " ");
+        }
+        System.out.println(" ");
+        for (;n > 0;) {
+            System.out.print(n + " ");
+            n--;
+        }
     }
 }
