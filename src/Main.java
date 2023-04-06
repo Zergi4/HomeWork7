@@ -50,6 +50,10 @@ public class Main {
             sum = sum + percent * sum;
             i++;
         }
-
+        n = 7;
+        while (n <= 31) {
+            System.out.println("Сегодня пятница, " + n + "-е число. Необходимо подготовить отчет.");
+            n = n + 7;
+        }
     }
 }
