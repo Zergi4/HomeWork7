@@ -27,8 +27,16 @@ public class Main {
         i = 0;
         while (i < 10) {
             i++;
-            population = population + (birthLate*population) - (mortality*population);
+            population = population + (birthLate * population) - (mortality * population);
             System.out.println("Год " + i + " численность населения составляет " + population);
+        }
+        i = 0;
+        float sum = 15000;
+        float percent = 0.07F;
+        while (sum < 12_000_000) {
+            sum = sum + percent * sum;
+            System.out.println("Месяц " + i + " сумма накоплений " + sum);
+            i++;
         }
     }
 }
